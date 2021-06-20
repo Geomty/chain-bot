@@ -1,0 +1,1 @@
+module.exports.client = new (require("./client/Client"))(); // when the most important file of any project is one line

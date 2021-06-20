@@ -1,0 +1,27 @@
+{
+  "name": "chain-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot (template) that moderates channels with message \"chains\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geomty/chain-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "chain"
+  ],
+  "author": "Geomty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Geomty/chain-bot/issues"
+  },
+  "homepage": "https://github.com/Geomty/chain-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
