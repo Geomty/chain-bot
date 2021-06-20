@@ -28,7 +28,9 @@ class Client extends Discord.Client {
         for (const handler of this.handlers) {
             this.on(handler.event, (event, otherEvent) => new handler(event, otherEvent));
         }
-        this.login(this.config.token);
+        this.login(this.config.token).then(() => {
+            this.user.setActivity(`for non-${config.word}'s`, { type: "WATCHING" });
+        });
     }
 }
 
