@@ -26,7 +26,7 @@ class Client extends Discord.Client {
     init() {
         this.once("ready", () => console.log(`I am online!`));
         for (const handler of this.handlers) {
-            this.on(handler.event, (event, otherEvent) => new handler(event, otherEvent));
+            this.on(handler.event, (...parameters) => new handler(...parameters));
         }
         this.login(this.config.token).then(() => {
             this.user.setActivity(`for non-${config.word}'s`, { type: "WATCHING" });
